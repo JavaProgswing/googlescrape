@@ -8,15 +8,11 @@ classifiers = [
   'Programming Language :: Python :: 3'
 ]
 
-README = open('CHANGELOG.txt').read()+"\n\n"
-with open("README.md", "r") as f:
-  README = README+f.read()
-
 setup(
   name='googlescrape',
-  version='0.0.4',
+  version='0.0.5',
   description='This is a python api to scrape search results from a url.',
-  long_description=README,
+  long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
   long_description_content_type="text/markdown",
   url='https://github.com/JavaProgswing/googlescrape',
   author='JavaProgswing',
