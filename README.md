@@ -24,6 +24,6 @@ scrapeClient.imagesearch("Oracle","capture.png")
 
 from googlescrape import client
 scrapeClient=client()
-scrapeClient.googlescrape("Oracle")
+scrapeClient.jsonsearch("Oracle")
 #outputs a json
 ```

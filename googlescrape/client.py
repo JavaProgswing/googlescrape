@@ -58,7 +58,7 @@ def sitesearch(url):
         parastr=parastr+str(para)+"\n"
     resultstring=resultstring+removetags(parastr)
     return resultstring
-class Client:
+class client:
     def __init__(self):
         gChromeOptions = webdriver.ChromeOptions()
         gChromeOptions.add_argument("window-size=1080x1080")
@@ -69,7 +69,7 @@ class Client:
     def imagesearch(self,search,savepath):
         search=search.replace(" ","+")
         take_screenshot(self.browser,f"https://www.google.com/search?q={search}",savepath)
-    def googlescrape(query):
+    def jsonsearch(query):
         html_doc=(getgooglecode(query).text)
         soup = BeautifulSoup(html_doc, 'html.parser')
         list=soup.find_all('h3')
@@ -97,6 +97,5 @@ class Client:
             except:
                 pass
         return jsonresult
-
 
 
