@@ -89,7 +89,7 @@ class client:
             if validurl(link):
                 listofwebsiteurls.append(link)
         jsonresult={}
-        for i in len(listofwebsiteurls):
+        for i in range(len(listofwebsiteurls)):
             try:
                 websitename=listofwebsitenames[i]
                 websiteurl=listofwebsiteurls[i]
