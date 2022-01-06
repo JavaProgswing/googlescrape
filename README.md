@@ -14,16 +14,16 @@ pip install googlescrape
 
 ```python
 
-from GoogleScrape import Client
-scrapeClient=Client()
+from googlescrape import client
+scrapeClient=client()
 scrapeClient.imagesearch("Oracle","capture.png")
 #saves the screenshot in capture.png
 ```
 
 ```python
 
-from GoogleScrape import Client
-scrapeClient=Client()
+from googlescrape import client
+scrapeClient=client()
 scrapeClient.googlescrape("Oracle")
 #outputs a json
 ```

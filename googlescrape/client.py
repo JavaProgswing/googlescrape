@@ -6,8 +6,7 @@ import requests
 import re
 from bs4 import BeautifulSoup
 import validators
-class GoogleScrapeException(Exception):
-    pass
+from .errors import *
 def take_screenshot(browser,url, save_fn="capture.png"):
     if not url.startswith('http://') and not url.startswith('https://'):
         url="https://"+url
@@ -15,7 +14,7 @@ def take_screenshot(browser,url, save_fn="capture.png"):
         browser.get(url)
     except Exception as ex:
         if isinstance(ex,selenium.common.exceptions.WebDriverException):
-            raise GoogleScrapeException("The url provided to take a screenshot was invalid!")
+            raise InvalidURLException("The url provided to take a screenshot was invalid!")
             return
         elif isinstance(ex,selenium.common.exceptions.InvalidSessionIdException):
             gChromeOptions = webdriver.ChromeOptions()
@@ -31,7 +30,7 @@ def take_screenshot(browser,url, save_fn="capture.png"):
     try:
         browser.save_screenshot(save_fn)
     except:
-        raise GoogleScrapeException("The file path provided to save the image might not be valid!")
+        raise InvalidPathException("The file path provided to save the image might not be valid!")
         return
 def removetags(raw_html):
   CLEANR = re.compile('<.*?>') 
