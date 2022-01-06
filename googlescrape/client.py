@@ -69,7 +69,7 @@ class client:
     def imagesearch(self,search,savepath):
         search=search.replace(" ","+")
         take_screenshot(self.browser,f"https://www.google.com/search?q={search}",savepath)
-    def jsonsearch(query):
+    def jsonsearch(self,query):
         html_doc=(getgooglecode(query).text)
         soup = BeautifulSoup(html_doc, 'html.parser')
         list=soup.find_all('h3')
