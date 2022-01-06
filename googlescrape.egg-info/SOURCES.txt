@@ -1,4 +1,6 @@
+CHANGELOG.txt
 LICENSE.txt
+MANIFEST.in
 README.md
 setup.py
 googlescrape/__init__.py

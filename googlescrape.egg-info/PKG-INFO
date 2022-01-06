@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: googlescrape
-Version: 0.0.5
+Version: 0.0.6
 Summary: This is a python api to scrape search results from a url.
 Home-page: https://github.com/JavaProgswing/googlescrape
 Author: JavaProgswing
@@ -50,9 +50,9 @@ scrapeClient.googlescrape("Oracle")
 Change Log
 ==========
 
-0.0.5 (06/01/2022)
+0.0.6 (06/01/2022)
 -------------------
-- Fifth release fixing import errors!
+- Sixth release fixing import errors!
 
 
 

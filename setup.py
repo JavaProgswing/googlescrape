@@ -10,7 +10,7 @@ classifiers = [
 
 setup(
   name='googlescrape',
-  version='0.0.5',
+  version='0.0.6',
   description='This is a python api to scrape search results from a url.',
   long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
   long_description_content_type="text/markdown",

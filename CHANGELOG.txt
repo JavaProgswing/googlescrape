@@ -1,8 +1,8 @@
 Change Log
 ==========
 
-0.0.5 (06/01/2022)
+0.0.6 (06/01/2022)
 -------------------
-- Fifth release fixing import errors!
+- Sixth release fixing import errors!
 
 
