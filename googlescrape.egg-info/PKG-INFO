@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
 Name: googlescrape
-Version: 0.0.2
+Version: 0.0.3
 Summary: This is a python api to scrape search results from a url.
-Home-page: UNKNOWN
+Home-page: https://github.com/JavaProgswing/googlescrape
 Author: JavaProgswing
 Author-email: thejavaprofessional@gmail.com
 License: MIT

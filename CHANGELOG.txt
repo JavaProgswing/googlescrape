@@ -1,8 +1,8 @@
 Change Log
 ==========
 
-0.0.2 (06/01/2022)
+0.0.3 (06/01/2022)
 -------------------
-- Second release with bug fixes!
+- Third release fixing deploy issue and minor bug fixes!
 
 

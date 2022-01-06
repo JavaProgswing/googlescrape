@@ -13,16 +13,17 @@ with open("README.md", "r") as f:
 
 setup(
   name='googlescrape',
-  version='0.0.2',
+  version='0.0.3',
   description='This is a python api to scrape search results from a url.',
   long_description=README,
   long_description_content_type="text/markdown",
-  url='',
+  url='https://github.com/JavaProgswing/googlescrape',
   author='JavaProgswing',
   author_email='thejavaprofessional@gmail.com',
-  license='MIT', 
+  license='MIT',
   classifiers=classifiers,
-  keywords='googlescrape', 
+  keywords='googlescrape',
   packages=find_packages(),
+  include_package_data=True,
   install_requires=['selenium >= 4.1.0','beautifulsoup4 >= 4.10.0','webdriver-manager == 3.5.2','validators >= 0.18.2']
 )
