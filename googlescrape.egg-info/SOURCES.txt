@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+googlescrape.egg-info/PKG-INFO
+googlescrape.egg-info/SOURCES.txt
+googlescrape.egg-info/dependency_links.txt
+googlescrape.egg-info/requires.txt
+googlescrape.egg-info/top_level.txt

@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: googlescrape
+Version: 0.0.2
+Summary: This is a python api to scrape search results from a url.
+Home-page: UNKNOWN
+Author: JavaProgswing
+Author-email: thejavaprofessional@gmail.com
+License: MIT
+Keywords: googlescrape
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# googlescrape
+
+## Installation
+
+Installation is simple!
+
+```python
+# Stable version
+
+pip install googlescrape
+```
+
+## Examples
+
+```python
+
+from GoogleScrape import Client
+scrapeClient=Client()
+scrapeClient.imagesearch("Oracle","capture.png")
+#saves the screenshot in capture.png
+```
+
+```python
+
+from GoogleScrape import Client
+scrapeClient=Client()
+scrapeClient.googlescrape("Oracle")
+#outputs a json
+```
+
+
