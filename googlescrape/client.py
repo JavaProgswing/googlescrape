@@ -19,6 +19,7 @@ def take_screenshot(browser,url, save_fn="capture.png"):
         elif isinstance(ex,selenium.common.exceptions.InvalidSessionIdException):
             gChromeOptions = webdriver.ChromeOptions()
             gChromeOptions.add_argument("window-size=1080x1080")
+            gChromeOptions.add_argument("--headless")
             gChromeOptions.add_argument("--disable-dev-shm-usage")
             s=Service(ChromeDriverManager().install())
             browser = webdriver.Chrome(options=gChromeOptions,service=s)
@@ -62,6 +63,7 @@ class client:
     def __init__(self):
         gChromeOptions = webdriver.ChromeOptions()
         gChromeOptions.add_argument("window-size=1080x1080")
+        gChromeOptions.add_argument("--headless")
         gChromeOptions.add_argument("--disable-dev-shm-usage")
         s=Service(ChromeDriverManager().install())
         browser = webdriver.Chrome(options=gChromeOptions,service=s)

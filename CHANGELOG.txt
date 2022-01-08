@@ -1,9 +1,9 @@
 Change Log
 ==========
 
-0.0.9 (06/01/2022)
+1.0.0 (08/01/2022)
 -------------------
-- Ninth release , fixed loop bug in jsonsearch function.
+- Tenth release , headless mode added!
 
 
 
