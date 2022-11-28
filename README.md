@@ -1,29 +1,33 @@
 # googlescrape
 
+What is `googlescrape?`
+
+`googlescrape` is a simple Python Package that can google anything and get it's results by scraping. 
+
 ## Installation
 
 Installation is simple!
 
-```python
-# Stable version
-
+```
 pip install googlescrape
 ```
 
 ## Examples
 
 ```python
+from googlescrape import Client
 
-from googlescrape import client
-scrapeClient=client()
-scrapeClient.imagesearch("Oracle","capture.png")
-#saves the screenshot in capture.png
+scrape_client = Client()
+scrape_client.image_search("Oracle", "capture.png")
+
+# Searches, and saves the screenshot as `capture.png`.
 ```
 
 ```python
+from googlescrape import Client
 
-from googlescrape import client
-scrapeClient=client()
-scrapeClient.jsonsearch("Oracle")
-#outputs a json
+scrapeClient = Client()
+scrapeClient.json_search("Oracle")
+
+# Searches, and outputs the result as JSON
 ```
