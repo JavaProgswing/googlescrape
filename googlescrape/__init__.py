@@ -1,2 +1,2 @@
-from .client import client
+from .client import Client
 from .errors import *
